@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    background-color:cadetblue;
+    
+}
+
+.container{
+    min-height: 10vh;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  
+}
+
+.team{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.grp-col{
+    flex-basis: 20%;
+    text-align: center;
+    cursor:  pointer;
+    transition: transform 1s;
+}
+
+.grp-col img{
+    width: 90%;
+    border-radius: 3px;
+}
+.info{
+    opacity: 0;
+}
+
+.info p{
+    color: #555;
+    font-weight: 600;
+}
+
+.grp-col: hover .info{
+    opacity: 0;
+}
+.grp-col:hover{
+    transform: translateY(-30px);
+}
